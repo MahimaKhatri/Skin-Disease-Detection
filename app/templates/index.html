@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+      <!-- header section starts -->
+
+<header class="fixed-top py-3">
+
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="#" class="logo">Skin Care<span class="fas fa-bacteria"></span></a>
+
+        <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+        <nav class="nav">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#prevent">skin type and disease</a>
+            <a href="#check">check my skin type</a>
+            <a href="#experts">Our Team</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- header section end-->
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="container">
+        
+
+        <div class="row min-vh-100 align-items-center pt-5">
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/istockphoto-1248674930-612x612-removebg-preview.png') }}" class="w-100" alt="">
+            </div>
+
+            <div class="col-md-6 content text-center text-md-start pl-md-5">
+                <span>your skin is your best accessory </span>
+                <h3>protect yourself from skin disease</h3>
+                <a href="#" class="link-btn">learn more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+<!-- home section starts  -->
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center flex-wrap-reverse">
+
+            <div class="col-md-6 content">
+                <h3>What are Skin Diseases?</h3>
+                <p>Skin diseases are conditions that affect your skin. These diseases may cause rashes, inflammation, itchiness or other skin changes. Some skin conditions may be genetic, while lifestyle factors may cause others. Skin disease treatment may include medications, creams or ointments, or lifestyle changes.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ipsam totam, vero cum eius tenetur! Possimus animi dolorem voluptate. Accusamus!</p>
+                <a href="#" class="link-btn">learn more</a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/conifer-1127-removebg-preview.png') }} " class="w-100" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+<!-- prevent section starts  -->
+
+<section class="prevent" id="prevent">
+
+    <h1 class="heading"> <span>Skin Type and Skin Diseases</span> </h1>
+
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-center">
+
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/dry.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/acne.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/Normal.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/oily.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/Normal.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/Sensitive.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/acne.png') }}" alt="">
+                <h3>wear a mask</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illo.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prevent section ends -->
+
+<!-- check -->
+
+<section class="check" id="check">
+
+    <h1 class="heading"> <span>Check Your Skin Type</span> </h1>
+    <!-- <form action="{{url_for('home_page')}}" method="POST", enctype="multipart/form-data">
+        <div class="upload-btn-wrapper">
+          <input type="file" class="custom-file-input" id="customFile" name="file" hidden="hidden" />
+          <center><button id="custom-button" for="customFile">Choose A File</button></center>
+        </div>
+        <br>
+        <center><button type="submit" id="submit-button" class="btn">Submit</button></center>
+    </form> -->
+    <form action="{{url_for('home_page')}}" method="POST", enctype="multipart/form-data">
+    <input type="file" id="real-file" name="file" hidden="hidden" />
+    <!-- <input type="file"  id="customFile" name="file" hidden="hidden"/> -->
+   <center><button type="button" id="custom-button" for="real-file">Choose A File</button></center> 
+   <br>
+    <center><button type="submit" id="submit-button">Submit</button></center>
+    </form>
+    <br>
+    <br>
+    {% if res %}
+        <div>
+        <center><h4 style="color: #926AD4; font-size: 2vw;">Your Result is here: </h4></center>
+        <center><h4 style="color: #926AD4; font-size: 2vw;">{{res}}</h4></center>
+        </div>
+    {% endif %}
+
+
+</section>
+<!-- check ends -->
+<!-- experts section starts  -->
+
+<section class="experts" id="experts">
+
+    <h1 class="heading"> meet our <span>Team</span> </h1>
+    
+        <div class="container">
+    
+            <div class="d-flex justify-content-center flex-wrap">
+    
+                <div class="box">
+                    <img src="{{ url_for('static', filename='images/42-420024_businessperson-computer-icons-woman-laborer-free-commercial-clip.png') }}" alt="">
+                    <h3>mahima khatri</h3>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <div class="share">
+                
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="{{ url_for('static', filename='images/560-5608215_laughing-woung-man-clipart-strong-person-clipart-png.png') }}" alt="">
+                    <h3>mudit jindal</h3>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <div class="share">
+                      
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="{{ url_for('static', filename='images/42-420024_businessperson-computer-icons-woman-laborer-free-commercial-clip.png') }}" alt="">
+                    <h3>charvy gugalia</h3>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+    
+                
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- experts section ends -->
+    <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> Us </h1>
+    
+        <div class="container">
+    
+            <div class="row flex-wrap-reverse">
+    
+                <div class="col-md-7 p-2">
+                    <form action="">
+                        <input type="text" placeholder="name" class="box">
+                        <input type="email" placeholder="email" class="box">
+                        <input type="number" placeholder="number" class="box">
+                        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" class="link-btn" value="send message" name="" id="">
+                    </form>
+                </div>
+    
+                <div class="col-md-5 p-2">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1627060527760!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- contact section ends -->
+    
+  
+    
+    <!-- footer section starts  -->
+    
+    <section class="footer">
+    
+        <div class="container">
+    
+            <div class="d-flex flex-wrap justify-content-center text-center text-sm-start">
+    
+                <div class="box p-3 m-2">
+                    <h3>Skin Care</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, vitae.</p>
+                </div>
+    
+                <div class="box p-3 m-2">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">skin type and disease</a>
+                    <a href="#">check my skin type</a>
+                    <a href="#">our team</a>
+                    <a href="#">contact us</a>
+                    
+                </div>
+    
+                <div class="box p-3 m-2">
+                    <h3>Connect with us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
+                    <a href="#">twitter</a>
+                </div>
+    
+                <div class="box p-3 m-2">
+                    <h3>contact info</h3>
+                    <a href="#">+123-456-9999</a>
+                    <a href="#">+111-222-3333</a>
+                    <a href="#">xx@gmail.com</a>
+                    <a href="#">delhi, india - 110000</a>
+                </div>
+    
+            </div>
+    
+            <div class="credit"> created by <span>Mahima Khatri</span> | all rights reserved </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+    
+
+
+
+<!-- js file link  -->
+<script src="/static/js/main.js"></script>
+</body>
+</html>

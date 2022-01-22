@@ -79,7 +79,7 @@ alt="Mahima Khatri">
 Charvy Gugalia
 
 <p align="center">
-<img src = "https://github.com/winee165"  height="120"
+<img src = "https://avatars.githubusercontent.com/u/77278889?v=4"  height="120"
 alt="Charvy">
 </p>
 <p align="center">

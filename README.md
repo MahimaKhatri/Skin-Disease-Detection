@@ -1,10 +1,11 @@
 <div align ='center'>
   
 # Unscript 2k22 - UNS_22_Pokemon
+### Domain : Machine Learning / AI
   
   </div>
   
-### Domain : Machine Learning / AI
+
 
 ### Problem Statement 
 Build Mathematical model using ML and signal processing concept to process the skin issues into dryness and oiliness.

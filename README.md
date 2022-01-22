@@ -3,7 +3,8 @@
 # Unscript 2k22 - UNS_22_Pokemon
   
   </div>
-Domain : Machine Learning / AI
+  
+### Domain : Machine Learning / AI
 
 ### Problem Statement 
 Build Mathematical model using ML and signal processing concept to process the skin issues into dryness and oiliness.
@@ -20,6 +21,22 @@ Patients face a lot of problems with their skin. The main issue remains with the
 + Pytorch
 + torchvision
 + Pillow
+
+## Model Used
+
+### EfficientNet-B0
+The EfficientNet-B0 architecture wasn’t developed by engineers but by the neural network itself. This model was developed using a multi-objective neural architecture search that optimizes both accuracy and floating-point operations.
+
+Taking B0 as a baseline model, the authors developed a full family of EfficientNets from B1 to B7 which achieved state of the art accuracy on ImageNet while being very efficient to its competitors.
+Below is a table showing the performance of EfficientNets family on ImageNet dataset.
+
+![alt text](https://github.com/MahimaKhatri/UNS_22_Pokemon/blob/master/Images/fam.png)
+
+The Efficient-B0 is mobile sized architecture having 11M trainable parameters. This is what the architecture looks like:
+
+![alt text](https://github.com/MahimaKhatri/UNS_22_Pokemon/blob/master/Images/b0.png)
+
+The pre-trained imagenet weights were loaded into the model. The first seven layers of the model architecture were frozen and the rest of the layers were trained on the data. The Stochastic Gradient Descent optimizer was used with a learning rate of 0.01 and a momentum of 0.9 . The loss function used was categorical cross entropy. The model achieved an accuracy of <strong>95.5%</strong> on the test data set.
 
 
 ## Running Instructions

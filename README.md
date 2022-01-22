@@ -1,4 +1,4 @@
-# UNS_22_Pokemon
+# Unscript 2k22 - UNS_22_Pokemon
 Domain : Machine Learning / AI
 
 Problem Name : Build Mathematical model using ML and signal processing concept to process the skin issues into dryness and oiliness.

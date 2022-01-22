@@ -1,0 +1,148 @@
+:root{
+    --main-color:#926ad4;
+    --black:#244361;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+html{
+    scroll-padding-top: 60px;
+}
+
+section{
+    padding:20px 0;
+    
+}
+
+section:nth-child(odd){
+    background:white;
+}
+
+.heading{
+    text-align: center;
+    padding:0 15px;
+    padding-bottom: 5px;
+    color:var(--black);
+    font-size: 30px;
+   
+}
+
+.heading span{
+    color:var(--main-color);
+   
+}
+
+.link-btn{
+    display: inline-block;
+    background:var(--main-color);
+    color:#fff;
+    border-radius: 50px;
+    padding:10px 25px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.link-btn:hover{
+    color:#fff;
+    background:magenta;
+}
+
+header{
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+header .logo{
+    font-size: 20px;
+    color:var(--black);
+}
+
+header .logo span{
+    color:var(--main-color);
+}
+
+header .nav a{
+    margin-left: 3px;
+    border-radius: 50px;
+    color:var(--black);
+    padding:5px 15px;
+}
+
+header .nav a:hover{
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color:#fff;
+}
+
+#menu-bar{
+    color:var(--black);
+    cursor: pointer;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.home{
+    min-height: 100vh;
+    background: url(/Images/home-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .content span{
+    color:var(--main-color);
+    font-size: 20px;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.about .content h3{
+    color:var(--black);
+    font-size: 33px;
+}
+
+.about .content p{
+    color:#777;
+    font-size: 14px;
+}
+
+@media (max-width:768px){
+
+    header .nav{
+        position: absolute;
+        top:100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .nav a{
+        display: block;
+        width: 100%;
+        margin:10px;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+}

@@ -17,7 +17,9 @@ Patients face a lot of problems with their skin. The main issue remains with the
 
 ## Tech Stack
 
-+ Html
++ Pytorch
++ torchvision
++ Pillow
 
 
 ## Running Instructions

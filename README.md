@@ -84,7 +84,7 @@ alt="Charvy">
 </p>
 <p align="center">
 <a href = "https://github.com/winee165" target="_blank"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/mahima-khatri-434a3b193/" target="_blank">
+<a href = "https://www.linkedin.com/in/charvygugalia/" target="_blank">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>

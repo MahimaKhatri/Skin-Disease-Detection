@@ -25,12 +25,12 @@ Patients face a lot of problems with their skin. The main issue remains with the
 ## Running Instructions
 Open the terminal and type the following 
 ```
-$ git clone https://github.com/mudit14224/3d-image-classification
-$ cd 3d-image-classification
-$ python3 -m venv 3d-class-env
-$ source 3d-class-env/bin/activate
+$ git clone https://github.com/MahimaKhatri/UNS_22_Pokemon.git
+$ cd UNS_22_Pokemon
+$ python3 -m venv skin-class-env
+$ source skin-class-env/bin/activate
 $ pip3 install -r requirements.txt
-$ python3 run.py
+$ python3 predict.py -m "Path to torch model" -i "Path to image"
 ```
 
 ## Developers

@@ -22,6 +22,13 @@ Patients face a lot of problems with their skin. The main issue remains with the
 + Pytorch
 + torchvision
 + Pillow
++ HTML
++ CSS
++ Bootstrap
++ Javascript
++ Flask
++ Werkzeug
+
 
 ## Model Used
 

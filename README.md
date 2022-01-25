@@ -17,6 +17,9 @@ Patients face a lot of problems with their skin. The main issue remains with the
 
 ![alt text](102730903-a-set-of-human-skin-conditions-illustration.webp)
 
+## Frontend
+![alt text](Images/WhatsApp Image 2022-01-23 at 12.55.42 PM (1).jpeg)
+
 ## Tech Stacks
 
 + Pytorch

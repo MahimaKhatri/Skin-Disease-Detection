@@ -25,10 +25,11 @@ Patients face a lot of problems with their skin. The main issue remains with the
 
 ![alt text](https://github.com/MahimaKhatri/UNS_22_Pokemon/blob/7416538e5e5e6de271488ffe43d04071ad33ea35/Images/WhatsApp%20Image%202022-01-23%20at%2012.55.43%20PM.jpeg)
 
+![alt text](https://github.com/MahimaKhatri/UNS_22_Pokemon/blob/403645597411511c1372c60d280ffecd5f37aa0f/Images/result.jpeg)
+
 ![alt text](https://github.com/MahimaKhatri/UNS_22_Pokemon/blob/a91f0f8080806e240dfa20efa9b38d68f90bed80/Images/WhatsApp%20Image%202022-01-23%20at%2012.55.43%20PM%20(1).jpeg)
 
 ![alt text](https://github.com/MahimaKhatri/UNS_22_Pokemon/blob/a91f0f8080806e240dfa20efa9b38d68f90bed80/Images/WhatsApp%20Image%202022-01-23%20at%2012.55.43%20PM%20(2).jpeg)
-
 
 
 

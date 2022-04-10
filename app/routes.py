@@ -3,7 +3,7 @@ from flask.templating import render_template
 from flask import request
 from werkzeug.utils import secure_filename
 from app import app
-import torch
+
 from PIL import Image
 import torchvision.transforms as T
 import os

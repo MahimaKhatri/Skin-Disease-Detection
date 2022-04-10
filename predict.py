@@ -1,7 +1,7 @@
 import torch
 from PIL import Image
 import torchvision.transforms as T
-import os
+
 import argparse
 
 def predict(model, img, tr, classes):

@@ -66,8 +66,8 @@ The pre-trained imagenet weights were loaded into the model. The first seven lay
 ## Running Instructions
 Open the terminal and type the following 
 ```
-$ git clone https://github.com/MahimaKhatri/UNS_22_Pokemon.git
-$ cd UNS_22_Pokemon
+$ git clone https://github.com/MahimaKhatri/Skin-Care.git
+$ cd Skin-Care
 $ python3 -m venv skin-class-env
 $ source skin-class-env/bin/activate
 $ pip3 install -r requirements.txt

@@ -3,7 +3,7 @@ let nav = document.querySelector('.nav');
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
-    nav.classList.toggle;
+    nav.classList.toggle('active');
 }
 
 let section = document.querySelectorAll('section');
